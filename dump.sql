@@ -147,17 +147,6 @@ ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_
 --
 
 COPY public.cashflow (id, user_id, date, description, value) FROM stdin;
-\N	11	2021-10-25	Comprar comida das criança	900
-\N	11	2021-10-25	Comprar comida das criança	900
-\N	11	2021-10-25	adadada	123
-\N	11	2021-10-25	ata	777
-\N	11	2021-10-25	ata	777
-\N	11	2021-10-25	ata	777
-\N	11	2021-10-25	ata	767
-\N	11	2021-10-25	ata	767
-\N	11	2021-10-25	aaaaaaaaaaaa	456
-\N	11	2021-10-25	teste	-1000
-\N	11	2021-10-25	testa	-12
 1	11	2021-10-25	3das	-23
 2	11	2021-10-25	3da	-321
 3	11	2021-10-25	ataa	-1000
@@ -184,6 +173,17 @@ COPY public.cashflow (id, user_id, date, description, value) FROM stdin;
 24	26	2021-10-25	ada	-231
 25	11	2021-10-25	UM TEXTO BEM GRANDE PRA TESTAR	-123
 26	11	2021-10-25	ASDADAASDAS DASDASDSA DSADASDASDSADS ASDDASDASDAS DASSADSADSADAS ADSDASDAS	-2222
+27	11	2021-10-25	Comprar comida das criança	900
+28	11	2021-10-25	Comprar comida das criança	900
+29	11	2021-10-25	adadada	123
+30	11	2021-10-25	ata	777
+31	11	2021-10-25	ata	777
+32	11	2021-10-25	ata	777
+33	11	2021-10-25	ata	767
+34	11	2021-10-25	ata	767
+35	11	2021-10-25	aaaaaaaaaaaa	456
+36	11	2021-10-25	teste	-1000
+37	11	2021-10-25	testa	-12
 \.
 
 
@@ -192,7 +192,6 @@ COPY public.cashflow (id, user_id, date, description, value) FROM stdin;
 --
 
 COPY public.sessions (id, user_id, token) FROM stdin;
-\N	3	adad
 \N	22	e4a11e60-2722-4e2b-b10e-7f875b499bc8
 \N	23	2269486a-4e1d-433a-9f61-3f3bdad8a847
 \N	26	c901023b-e9fb-4f2c-a6c3-93600ccfa5a3
@@ -207,15 +206,7 @@ COPY public.sessions (id, user_id, token) FROM stdin;
 --
 
 COPY public.users (id, name, email, password) FROM stdin;
-1	Glauco	glauco@teste.com	senhasecreta
 2	Gleuco	gleuco@gmail.com	$2b$11$JnJYL4Ieey/KYOCQW1mGZ.Npp8G8jth95R4tEUqCPXQoJWU0UHzfi
-3	Gleuco	gleuco@gmail.com	$2b$11$quPoWxJ8iKvUf7bDkYgSMuJuwhMLf.g6hVIfO5azsqjwC9GP2o5FG
-4	Gleuco	gleuco@gmail.com	$2b$11$zzYj.OfadvMYz0z17WcWnOxwti6wlApK5Xav58ws6DF4qv0IbUeYm
-5	Gleuco	gleuco@gmail.com	$2b$11$bRYLuisR/FlsoDlrNkSM3.wzTkiXAk78zvVxjF5EoZvTLJEii1Vse
-6	Gleuco	gleuco@gmail.com	$2b$11$z8nf4wOStcWXGha5CCJ3/ey1UcQVcJZpDI3PiGxid.3qR4jjJ789S
-7	Gleuco	gleuco@gmail.com	$2b$11$HmRXtNstuKhgJjd9egbXGeIB.J9y3IRs/Rd5huPV.0nMZvE/fLpEK
-8	Gleuco	gleuco@gmail.com	$2b$11$OY4ffcvUUUOi7WTVDJWDPebyYdaO0akdGiklDPYJJtN9Td9c527Lm
-9	Gleuco	gleuco@gmail.com	$2b$11$jw2jMouGc2SkRLB.r7kkJeF6Bp4alMs8yIHTxWgeuVcJMe4AakF7C
 10	Gleuco	gleucodad@gmail.com	$2b$11$lijIK9x4f0CtmFG4oCHMpeDF5fDC4728rDdNUA2Ny020NZ1iETE4i
 11	Glauco	email@teste.com	$2b$11$iGxXEIB9IVIacf2JDJZUrOiAjOU9UHs9krOyMzLsLndz8o7R/aJce
 12	Glauco	email12@teste.com	$2b$11$4YSMbzmcx6FBvznYjzwwGe1UTMHbptb.3ns3bmrkT3U4id0bg1U3C
