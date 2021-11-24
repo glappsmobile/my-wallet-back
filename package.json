@@ -5,23 +5,42 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=prod node ./src/server.js",
+    "start:dev": "NODE_ENV=dev nodemon ./src/server.js",
+    "start:test": "NODE_ENV=test node ./src/server.js",
+    "test": "NODE_ENV=test npx jest -i",
+    "test:watch": "NODE_ENV=test npx jest --watch"
+  },
+  "homepage": "https://github.com/glappsmobile/my-wallet-back#readme",
+  "bugs": {
+    "url": "https://github.com/glappsmobile/my-wallet-back/issues"
   },
   "keywords": [],
-  "author": "",
+  "author": "Glauco Villas Boas",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "dayjs": "^1.10.7",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "joi": "^17.4.2",
     "pg": "^8.7.1",
-    "react-icons": "^4.3.1",
-    "supertest": "^6.1.6",
-    "uuid": "^8.3.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
-    "babel-jest": "^27.3.1"
+    "babel-jest": "^27.3.1",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "faker": "^5.5.3",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
+    "prettier": "2.4.1",
+    "supertest": "^6.1.6"
   }
 }
