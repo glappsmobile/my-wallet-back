@@ -17,7 +17,6 @@ app.post('/sign-up', async (req, res) => {
 
   const { name, email, password } = req.body;
 
-  // CHECK IF EMAIL EXISTS
   try {
     const query = await connection.query(
       'SELECT * FROM users WHERE email = $1 LIMIT 1;',
