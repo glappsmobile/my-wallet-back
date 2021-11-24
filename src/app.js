@@ -180,7 +180,4 @@ app.get('/cashflow', async (req, res) => {
   }
 });
 
-app.listen(4000, () => {
-  // eslint-disable-next-line no-console
-  console.log('Server listening on port 4000.');
-});
+export default app;
