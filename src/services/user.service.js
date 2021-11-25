@@ -9,8 +9,7 @@ const createUser = async ({ name, password, email }) => {
   }
 
   const hashedPassword = bcrypt.hashSync(password, 12);
-  const createdUser = userRepository.createUserDB({ name, email, password: hashedPassword });
-  console.log(createdUser);
+  const createdUser = await userRepository.createUserDB({ name, email, password: hashedPassword });
   return createdUser;
 };
 
