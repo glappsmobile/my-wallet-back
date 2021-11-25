@@ -1,4 +1,4 @@
-import connection from '../database.js';
+import connection from '../database/connection.js';
 
 const createUserDB = async ({ name, email, password }) => {
   try {
