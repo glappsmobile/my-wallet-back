@@ -7,7 +7,7 @@ const connection = new Pool({
   host: 'localhost',
   port: 5432,
   database: 'my_wallet',
-  password: 'senha_super_hiper_ultra_secreta_do_role_do_bootcamp',
+  password: 'bn;h5x4e}E/Mn(>_',
 });
 
 export default connection;
