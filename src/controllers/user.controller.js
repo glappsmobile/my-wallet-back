@@ -1,5 +1,6 @@
 import * as userSchema from '../schemas/user.schema.js';
 import * as userService from '../services/user.service.js';
+import * as sessionService from '../services/session.service.js';
 
 const signUp = async (req, res) => {
   if (userSchema.signUp.validate(req.body).error) {
@@ -24,7 +25,7 @@ const signIn = async (req, res) => {
     return res.sendStatus(400);
   }
 
-  const user = await userService.createSession(req.body);
+  const user = await sessionService.createSession(req.body);
 
   if (user === null) {
     return res.sendStatus(401);

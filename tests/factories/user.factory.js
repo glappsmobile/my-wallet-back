@@ -8,7 +8,13 @@ const createUser = async ({ name, email, password } = {}) => {
   const fakeEmail = email || faker.internet.email();
   const hashedPassword = bcrypt.hashSync(password || fakePassword, 10);
 
-  const createdUser = await userRepository.createUser({ name, email, password: hashedPassword });
+  const createdUser = await userRepository.createUser(
+    {
+      name: fakeName,
+      email: fakeEmail,
+      password: hashedPassword,
+    },
+  );
 
   return {
     id: createdUser.id,
