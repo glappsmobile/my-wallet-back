@@ -1,6 +1,6 @@
 import connection from '../database/connection.js';
 
-const createUserDB = async ({ name, email, password }) => {
+const createUser = async ({ name, email, password }) => {
   try {
     const user = await connection.query(
       'INSERT INTO "users" ("name", "email", "password") VALUES ($1, $2, $3) RETURNING *;',
@@ -10,6 +10,18 @@ const createUserDB = async ({ name, email, password }) => {
     return user.rows;
   } catch (err) {
     return [];
+  }
+};
+
+const createSession = async ({ userId, token }) => {
+  try {
+    const user = await connection.query(
+      'INSERT INTO "sessions" ("user_id", "token") VALUES ($1, $2) RETURNING *;',
+      [userId, token],
+    );
+    return user.rows[0];
+  } catch (err) {
+    return {};
   }
 };
 
@@ -23,5 +35,5 @@ const findUserByEmail = async ({ email }) => {
 };
 
 export {
-  createUserDB, findUserByEmail,
+  createUser, createSession, findUserByEmail,
 };

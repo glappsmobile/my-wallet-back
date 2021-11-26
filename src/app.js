@@ -1,8 +1,6 @@
 import './setup.js';
 import express from 'express';
 import cors from 'cors';
-import bcrypt from 'bcrypt';
-import { v4 as uuid } from 'uuid';
 import validateCashFlow from './validation/validateCashFlow.js';
 import connection from './database/connection.js';
 import * as userController from './controllers/user.controller.js';
@@ -13,46 +11,7 @@ app.use(cors());
 
 app.post('/sign-up', userController.signUp);
 
-app.post('/sign-in', async (req, res) => {
-  const { email, password } = req.body;
-
-  // CHECK IF EMAIL EXISTS AND IF PASS IS VALID
-  try {
-    const query = await connection.query(
-      'SELECT * FROM users WHERE email = $1 LIMIT 1;',
-      [email],
-    );
-    const user = query.rows[0];
-
-    if (!user || !bcrypt.compareSync(password, user.password)) {
-      return res.sendStatus(401);
-    }
-
-    // DELETE PREVIOUS SESSION
-    const session = await connection.query(
-      'SELECT * FROM sessions WHERE user_id = $1 LIMIT 1',
-      [user.id],
-    );
-
-    if (session.rows[0]) {
-      await connection.query(
-        'DELETE FROM sessions WHERE user_id = $1',
-        [user.id],
-      );
-    }
-
-    const token = uuid();
-
-    await connection.query(
-      'INSERT INTO sessions (user_id, token) VALUES ($1, $2)',
-      [user.id, token],
-    );
-
-    return res.send({ token, name: user.name });
-  } catch (error) {
-    return res.status(500).send(error.message);
-  }
-});
+app.post('/sign-in', userController.signIn);
 
 app.post('/cashflow', async (req, res) => {
   const { description, value } = req.body;
