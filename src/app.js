@@ -17,48 +17,6 @@ app.post('/sign-in', userController.signIn);
 
 app.post('/transactions', auth, transactionsController.createTransaction);
 
-app.post('/cashflow', async (req, res) => {
-  const { description, value } = req.body;
-  const token = req.headers.authorization?.replace('Bearer ', '');
-
-  if (!token) {
-    return res.sendStatus(401);
-  }
-
-  if (validateCashFlow.validate(req.body).error) {
-    return res.sendStatus(400);
-  }
-
-  try {
-    const userQuery = await connection.query(
-      `
-      SELECT users.* 
-      FROM users 
-        JOIN sessions
-          ON users.id = sessions.user_id
-      WHERE token = $1;`,
-      [token],
-    );
-
-    const user = userQuery.rows[0];
-
-    if (!user) {
-      return res.sendStatus(401);
-    }
-
-    await connection.query(
-      `
-      INSERT INTO cashflow (user_id, date, description, value) 
-      VALUES ($1, $2, $3, $4);`,
-      [user.id, 'now()', description, value],
-    );
-
-    return res.sendStatus(201);
-  } catch (error) {
-    return res.status(500).send(error.message);
-  }
-});
-
 app.get('/cashflow', async (req, res) => {
   const token = req.headers.authorization?.replace('Bearer ', '');
 
