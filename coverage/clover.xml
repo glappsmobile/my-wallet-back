@@ -1,62 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1637969127608" clover="3.2.0">
-  <project timestamp="1637969127608" name="All files">
-    <metrics statements="120" coveredstatements="61" conditionals="52" coveredconditionals="27" methods="15" coveredmethods="9" elements="187" coveredelements="97" complexity="0" loc="120" ncloc="120" packages="9" files="12" classes="12"/>
+<coverage generated="1638056425169" clover="3.2.0">
+  <project timestamp="1638056425170" name="All files">
+    <metrics statements="147" coveredstatements="129" conditionals="59" coveredconditionals="48" methods="24" coveredmethods="23" elements="230" coveredelements="200" complexity="0" loc="147" ncloc="147" packages="9" files="18" classes="18"/>
     <package name="src">
-      <metrics statements="41" coveredstatements="12" conditionals="14" coveredconditionals="2" methods="2" coveredmethods="0"/>
+      <metrics statements="13" coveredstatements="12" conditionals="4" coveredconditionals="2" methods="0" coveredmethods="0"/>
       <file name="app.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/app.js">
-        <metrics statements="35" coveredstatements="7" conditionals="10" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="21" count="0" type="stmt"/>
-        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="39" count="0" type="stmt"/>
-        <line num="41" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="52" count="0" type="stmt"/>
-        <line num="54" count="0" type="stmt"/>
-        <line num="58" count="1" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="61" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="76" count="0" type="stmt"/>
-        <line num="78" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="79" count="0" type="stmt"/>
-        <line num="82" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="86" count="0" type="stmt"/>
-        <line num="96" count="0" type="stmt"/>
-        <line num="102" count="0" type="stmt"/>
-        <line num="104" count="0" type="stmt"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
       </file>
       <file name="setup.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/setup.js">
         <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="0" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="6" count="0" type="stmt"/>
-        <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="18" coveredstatements="11" conditionals="12" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <metrics statements="33" coveredstatements="28" conditionals="18" coveredconditionals="13" methods="4" coveredmethods="4"/>
+      <file name="transactions.controller.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/controllers/transactions.controller.js">
+        <metrics statements="15" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+      </file>
       <file name="user.controller.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/controllers/user.controller.js">
-        <metrics statements="18" coveredstatements="11" conditionals="12" coveredconditionals="6" methods="2" coveredmethods="2"/>
-        <line num="5" count="1" type="stmt"/>
+        <metrics statements="18" coveredstatements="16" conditionals="12" coveredconditionals="10" methods="2" coveredmethods="2"/>
+        <line num="5" count="2" type="stmt"/>
         <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="7" count="1" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
@@ -65,85 +55,130 @@
         <line num="16" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="17" count="0" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="4" type="cond" truecount="2" falsecount="0"/>
         <line num="25" count="1" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="30" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="34" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.database">
       <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
       <file name="connection.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/database/connection.js">
         <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="13" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.middlewares">
+      <metrics statements="12" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <file name="auth.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/middlewares/auth.js">
+        <metrics statements="12" coveredstatements="11" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="7" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="19" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.repositories">
-      <metrics statements="16" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+      <metrics statements="26" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
       <file name="session.repository.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/repositories/session.repository.js">
-        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+      </file>
+      <file name="transactions.repository.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/repositories/transactions.repository.js">
+        <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
       </file>
       <file name="user.repository.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/repositories/user.repository.js">
-        <metrics statements="13" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
+        <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="5" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="9" type="stmt"/>
+        <line num="34" count="9" type="stmt"/>
       </file>
     </package>
     <package name="src.schemas">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="transactions.schema.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/schemas/transactions.schema.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
       <file name="user.schema.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/schemas/user.schema.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="23" coveredstatements="8" conditionals="8" coveredconditionals="2" methods="3" coveredmethods="1"/>
+      <metrics statements="30" coveredstatements="26" conditionals="8" coveredconditionals="7" methods="6" coveredmethods="6"/>
       <file name="session.service.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/services/session.service.js">
-        <metrics statements="16" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="28" count="0" type="stmt"/>
+        <metrics statements="16" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="2" coveredmethods="2"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="9" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="27" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="5" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+      </file>
+      <file name="transactions.service.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/services/transactions.service.js">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
       </file>
       <file name="user.service.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/services/user.service.js">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="8" count="1" type="stmt"/>
@@ -152,37 +187,47 @@
         <line num="13" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="src.validation">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="validateCashFlow.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/src/validation/validateCashFlow.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-      </file>
-    </package>
     <package name="tests.factories">
-      <metrics statements="12" coveredstatements="12" conditionals="16" coveredconditionals="16" methods="2" coveredmethods="2"/>
+      <metrics statements="21" coveredstatements="18" conditionals="21" coveredconditionals="20" methods="5" coveredmethods="4"/>
+      <file name="session.factory.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/tests/factories/session.factory.js">
+        <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+      </file>
+      <file name="transactions.factory.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/tests/factories/transactions.factory.js">
+        <metrics statements="5" coveredstatements="2" conditionals="4" coveredconditionals="3" methods="2" coveredmethods="1"/>
+        <line num="4" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
       <file name="user.factory.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/tests/factories/user.factory.js">
         <metrics statements="12" coveredstatements="12" conditionals="16" coveredconditionals="16" methods="2" coveredmethods="2"/>
-        <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="8" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="27" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="28" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="29" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="30" count="1" type="cond" truecount="2" falsecount="0"/>
-        <line num="32" count="1" type="stmt"/>
+        <line num="5" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="7" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="27" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="29" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="4" type="stmt"/>
       </file>
     </package>
     <package name="tests.utils">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="database.js" path="/home/glaucovillasboas/Workspace/Web/Bootcamp/projeto_14_mywallet/MyWallet Back/tests/utils/database.js">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="4" count="5" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="17" type="stmt"/>
+        <line num="5" count="17" type="stmt"/>
+        <line num="6" count="17" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
       </file>
     </package>
   </project>
