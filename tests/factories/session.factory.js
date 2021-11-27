@@ -7,6 +7,7 @@ const createSession = async ({ name, email, password } = {}) => {
     email,
     password,
   });
+
   const session = await sessionService.createSession({
     email: user.email,
     password: user.password,
