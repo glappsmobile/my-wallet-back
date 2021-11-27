@@ -3,7 +3,9 @@ import express from 'express';
 import cors from 'cors';
 import validateCashFlow from './validation/validateCashFlow.js';
 import connection from './database/connection.js';
+import auth from './middlewares/auth.js';
 import * as userController from './controllers/user.controller.js';
+import * as transactionsController from './controllers/transactions.controller.js';
 
 const app = express();
 app.use(express.json());
@@ -12,6 +14,8 @@ app.use(cors());
 app.post('/sign-up', userController.signUp);
 
 app.post('/sign-in', userController.signIn);
+
+app.post('/transactions', auth, transactionsController.createTransaction);
 
 app.post('/cashflow', async (req, res) => {
   const { description, value } = req.body;
