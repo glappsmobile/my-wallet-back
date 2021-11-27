@@ -18,6 +18,17 @@ const createTransaction = async (req, res) => {
   return res.sendStatus(201);
 };
 
+const getTransactions = async (req, res) => {
+  const { user } = res.locals;
+  const transactions = await transactionsService.getTransactions({ userId: user.id });
+  if (transactions === null) {
+    return res.sendStatus(500);
+  }
+
+  return res.send(transactions);
+};
+
 export {
   createTransaction,
+  getTransactions,
 };
