@@ -1,47 +1,52 @@
-- Antes de começar
+# Dev. Store - Backend
+A simple project with Node + Express for managing financial incomes and outcomes. <br/>
 
-    1. Extraia os arquivos do banco do zip abaixo:
-        
-        [database-mystoreultrasystem-3a28727e.zip](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1533e3dc-4009-4313-9f45-e614c89f01eb/database-mystoreultrasystem-3a28727e.zip)
-        
-    2. Abra um terminal na pasta do banco de dados extraídos e execute o seguinte comando para configurar o banco:
-        
-        ```sql
-        bash ./create-database
-        ```
-        
-    3. Abra um terminal na pasta do back-end e execute o seguinte comando:
-        
-        ```bash
-        npm i # para instalar todas as dependências
-        node src/app.js # para executar o servidor
-        ```
-        
+### Tooling:
+* [ExpressJS](https://expressjs.com/)
+* [JavaScript](https://www.javascript.com/)
+* [NodeJS](https://nodejs.org/en/about/)
+* [PostreSQL](https://www.postgresql.org/)
+* [JestJS](https://jestjs.io/)
 
-Depois de tanto tempo trabalhando com banco de dados de produtos, decidiu criar seu próprio sistema de gerenciamento de produtos!
+### Prerequisites
+* [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)
+* [PostgreSQL](https://www.postgresql.org/)
 
-Para isso, já tem o banco construído com a tabela `produtos`, com a seguinte estrutura:
+## Installation
+### Repository
+* Clone the backend repository
+```sh
+git clone https://github.com/glappsmobile/my-wallet-back
+```
+* Install NPM packages
+```sh
+npm install
+```
+### Database
+<p align="center">
+  <img src="https://github.com/glappsmobile/my-wallet-back/blob/assets/db_image.png" alt="Database Image"/>
+</p>
 
-- `id`, número;
-- `nome`, string;
-- `preco`, número inteiro;
-- `condicao`, string com valor `"novo"`, `"seminovo"` ou `"usado"`.
+* Create the dev and test database using PostgreSQL
+```sh
+CREATE DATABASE mywallet_test;
+CREATE DATABASE mywallet_dev;
+```
 
-O sistema dado no zip abaixo possui 3 rotas parcialmente implementadas:
+* Import [DATABASE.sql](https://github.com/glappsmobile/my-wallet-back/blob/main/DATABASE.sql) to both databases 
+```sh
+pg_dump mywallet_test < path/to/DATABASE.sql
+pg_dump mywallet_dev < path/to/DATABASE.sql
+```
 
-- **GET** `/api/products`
-    
-    Deve buscar todos os produtos da tabela e retorná-los ao usuário da API.
-    
-    **Esta rota já está implementada.**
-    
-- **GET** `/api/products/:id`
-    
-    Deve buscar um único produto do banco de dados pelo id especificado. Se nenhum produto for encontrado, deve retornar com status `404`. Se algum produto for encontrado, deve retorná-lo com status `200`.
-    
-- **POST** `/api/products`
-    
-    Deve inserir um produto no banco de dados. **Somente após a inserção** deve retornar status `201`.
-    
+* Put the database information in the [.env.dev](https://github.com/glappsmobile/my-wallet-back/blob/main/.env.dev) and [.env.test](https://github.com/glappsmobile/my-wallet-back/blob/main/.env.test) files in the backend repository.
 
-As rotas não implementadas inicialmente respondem com o status `501`, que significa "Não implementado". Implemente as funções das rotas e **remova** a linha que responde com status `501`.
+### How to run:
+To start the development server, run:
+```sh
+npm run start:dev
+```
+To start the frontend, run:
+```sh
+npm start
+```
