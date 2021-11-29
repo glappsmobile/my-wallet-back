@@ -13,6 +13,17 @@ const createUser = async ({ name, password, email }) => {
   return createdUser;
 };
 
+const findUserById = async ({ userId }) => {
+  const user = await userRepository.findUserById({ userId });
+
+  if (!user) {
+    return null;
+  }
+
+  return user;
+};
+
 export {
   createUser,
+  findUserById,
 };

@@ -40,7 +40,15 @@ const signIn = async (req, res) => {
   });
 };
 
+const getUser = async (req, res) => {
+  const { id: userId } = res.locals.user;
+  const user = await userService.findUserById({ userId });
+
+  res.send(user);
+};
+
 export {
   signUp,
   signIn,
+  getUser,
 };

@@ -13,6 +13,8 @@ app.post('/sign-up', userController.signUp);
 
 app.post('/sign-in', userController.signIn);
 
+app.get('/user', auth, userController.getUser);
+
 app.post('/transactions', auth, transactionsController.createTransaction);
 
 app.get('/transactions', auth, transactionsController.getTransactions);

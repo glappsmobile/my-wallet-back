@@ -34,6 +34,15 @@ const findUserByEmail = async ({ email }) => {
   return userQuery.rows[0];
 };
 
+const findUserById = async ({ userId }) => {
+  const userQuery = await connection.query(
+    'SELECT name FROM "users" WHERE "id"=$1',
+    [userId],
+  );
+
+  return userQuery.rows[0];
+};
+
 export {
-  createUser, createSession, findUserByEmail,
+  createUser, createSession, findUserByEmail, findUserById,
 };
