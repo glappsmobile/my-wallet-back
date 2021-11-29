@@ -24,7 +24,7 @@ npm install
 ```
 ### Database
 <p align="center">
-  <img src="https://github.com/glappsmobile/my-wallet-back/blob/assets/db_image.png" alt="Database Image"/>
+  <img src="https://github.com/glappsmobile/my-wallet-back/blob/assets/db_image2.png" alt="Database Image"/>
 </p>
 
 * Create the dev and test database using PostgreSQL
