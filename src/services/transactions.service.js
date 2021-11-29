@@ -1,8 +1,8 @@
 import * as transactionsRepository from '../repositories/transactions.repository.js';
 
 // eslint-disable-next-line arrow-body-style
-const createTransaction = async ({ userId, value }) => {
-  return transactionsRepository.createTransaction({ userId, value });
+const createTransaction = async ({ userId, value, description }) => {
+  return transactionsRepository.createTransaction({ userId, value, description });
 };
 
 const getTransactions = async ({ userId }) => {

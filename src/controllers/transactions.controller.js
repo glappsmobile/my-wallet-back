@@ -6,10 +6,11 @@ const createTransaction = async (req, res) => {
     return res.sendStatus(400);
   }
 
-  const { value } = req.body;
+  const { value, description } = req.body;
   const { user } = res.locals;
 
-  const transaction = await transactionsService.createTransaction({ userId: user.id, value });
+  const transaction = await transactionsService
+    .createTransaction({ userId: user.id, value, description });
 
   if (transaction.length === 0) {
     return res.sendStatus(500);
