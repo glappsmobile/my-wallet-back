@@ -1,10 +1,10 @@
 import connection from '../database/connection.js';
 
-const createTransaction = async ({ userId, value }) => {
+const createTransaction = async ({ userId, value, description = 'Sem descrição' }) => {
   try {
     const transactionQuery = await connection.query(
-      'INSERT INTO "transactions" ("user_id", "value") VALUES ($1, $2) RETURNING *;',
-      [userId, value],
+      'INSERT INTO "transactions" ("user_id", "value", "description") VALUES ($1, $2, $3) RETURNING *;',
+      [userId, value, description],
     );
 
     return transactionQuery.rows;
@@ -16,7 +16,7 @@ const createTransaction = async ({ userId, value }) => {
 const findTransactionsByUserId = async ({ userId }) => {
   try {
     const transactionsQuery = await connection.query(
-      `SELECT id, value, created_at
+      `SELECT id, value, description, created_at
        FROM "transactions" 
        WHERE "user_id"=$1 AND deleted_at IS NULL 
        ORDER BY "id" DESC`,

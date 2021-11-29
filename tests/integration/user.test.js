@@ -38,6 +38,5 @@ const createToken = async () => {
     const response = await agent.get("/user").set("Authorization", `Bearer ${token}`);
     expect(response.status).toEqual(200);
     expect(response.body).toHaveProperty('name');
-
   });
 });
